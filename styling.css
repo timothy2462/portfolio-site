@@ -11,7 +11,12 @@
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+   
+}
+body{
+    transition: all 2s ease-in-out;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -242,7 +247,7 @@ p {
     width: 100%;
     background-color: black;
     background-size: cover;
-    opacity: .5;
+    opacity: .3;
     z-index: -1;
     display: flex;
     justify-content: center;
@@ -427,6 +432,21 @@ i {
     margin: 0 auto;
     padding: 100px 0;
 }
+.recent-project p{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 200;
+    color: black;
+}
+.recent-project .git{
+    color: crimson;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.recent-project .git:hover{
+    color: blue;
+}
 
 #projects .projects-header h1 {
     margin-bottom: 50px;
@@ -483,6 +503,19 @@ i {
     color: white;
 }
 
+#projects .project-info .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    border-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: 1s ease;
+    transition-property: background-color, color;
+}
 #projects .project-img {
     flex-basis: 50%;
     height: 300px;
@@ -549,7 +582,7 @@ i {
 }
 
 #about .col-right {
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -558,9 +591,20 @@ i {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .2rem;
-    text-align: center;
+    text-align: center
+    
+}
 
+#about .col-right h3{
+    text-align:left ;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
 
+#about .col-right p{
+    font-weight: 450;
+    line-height: 30px;
 }
 
 .credentials .name {
@@ -797,6 +841,7 @@ ul {
 
 /* media querry for desktop */
 @media only screen and (min-width:1200px) {
+   
     #header .hamburger{
         display: none;
     }
@@ -829,6 +874,8 @@ ul {
 
 
 }
+
+
 
 
 
